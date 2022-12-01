@@ -1,0 +1,20 @@
+.Truscon{
+    min-height:20rem;
+    background-color: rgb(219, 219, 219);
+    margin: auto;
+   
+}
+.trus-logo-mar{
+margin:2rem;
+font-size: 4.5rem;
+}
+.flex-center img{
+    width:5rem
+}
+
+@media(max-width:786px) {
+    .flex-center{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

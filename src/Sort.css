@@ -1,0 +1,24 @@
+.sortdflex{
+    width: 95%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+.icon{
+    font-size: 2rem;
+    padding: .3rem;
+}
+.btndf{
+display: flex;
+}
+button{
+    text-decoration: none;
+    background-color:lightpink;
+    margin: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

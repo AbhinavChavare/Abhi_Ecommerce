@@ -1,0 +1,44 @@
+.container{
+    width:95%;
+    min-height:35rem; 
+    margin: auto;
+    background-color: rgb(231, 226, 226);
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.grid-disp{
+    display: grid;
+}
+.grid-two-col{
+    grid-template-columns: repeat(2,1fr);
+}
+.HeroScetionData{
+    padding: 2rem;
+
+}
+.btnshow{
+    padding:1.5rem 2rem;
+    color:whitesmoke;
+    background-color: rgb(40, 172, 224);
+    font-weight: 600;
+    border-radius: 5px;
+}
+.btnshow:hover{
+    background-color: aqua;
+    color: blue;
+}
+.HeroScetionImg{
+    padding: 10px;
+    display: flex;
+}
+.HeroScetionImg img{
+    margin: auto;
+width: 100%;
+/* height: 100%; */
+}
+
+@media (max-width:850px){
+    .grid-two-col{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

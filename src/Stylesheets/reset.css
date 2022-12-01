@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--secondary-color);
+}
+button{
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    border: 0;
+    font-size: 1.6rem;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}

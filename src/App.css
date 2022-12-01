@@ -1,0 +1,11 @@
+@import url("./Stylesheets/colors.css");
+/* @import url("./Stylesheets/reset.css"); */
+@import url("./Stylesheets/variables.css");
+@import url("./Stylesheets/spacing.css");
+@import url("./Stylesheets/utility.css"); 
+html{
+  font-size: 10px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--secondary-color);
+}

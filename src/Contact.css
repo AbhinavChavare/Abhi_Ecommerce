@@ -1,0 +1,35 @@
+.contTitle{
+    margin: auto;
+    margin:2.5rem 0 ;
+    text-align: center;
+    font-weight: 500;
+}
+.mapcon{
+   min-height: 30rem;
+   border: 1px solid black;
+   }
+   .cont-form{
+    margin: 2rem;
+    
+}
+.conformwid {
+       padding: 0.5rem 0.3rem;
+    min-width:35rem ;
+    margin: 1rem;
+    outline: none;
+   }
+   .formbtn{
+       border-style: none;
+    min-width: 4rem;
+   padding: 0.8rem 1.4rem;
+   color:whitesmoke;
+   background-color: rgb(15, 157, 214);
+   font-weight: 400;
+   border-radius: 5px;
+   cursor: pointer;
+   }
+   .formbtn:hover{
+    background-color: aqua;
+    color: blue;
+   }
+

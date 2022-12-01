@@ -1,0 +1,137 @@
+.footcon{
+    min-height:6rem;
+    background-color: rgb(121, 117, 117);
+    position: relative;
+    margin-top: 7rem;
+}
+.footstart{
+    min-width: 60vw;
+    max-width: 70vw;
+    /* height:10rem; */
+    background-color: rgb(41, 242, 92);
+    position: absolute;
+    top: -6rem;
+    left: 50vw;
+    transform: translate(-50%,0%);
+    /* right: auto; */
+      border-radius: 1.5rem;
+      padding:1rem 2rem;
+      text-align:start;
+    
+         
+}
+.flex-spaeven{
+    justify-content: space-between;
+    
+}
+.fot-start-con{
+    max-width: 15rem;
+    line-height: 1.8rem;
+}
+
+.btnshow{
+    padding:1.5rem 2rem;
+    color:whitesmoke;
+    background-color: rgb(40, 172, 224);
+    font-weight: 600;
+    border-radius: 5px;
+}
+.btnshow:hover{
+    background-color: aqua;
+    color: blue;
+}
+
+
+.fot-sect-cent{
+     min-height: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+    background-color: rgb(121, 117, 117);
+    padding: 2rem;
+    padding-top: 10rem ;
+    box-sizing: border-box;
+}
+.fot-data-con{
+width:18rem;
+min-height: 10rem;
+color: whitesmoke;
+padding: .5rem;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+border-radius: 1rem;
+margin: .5rem;
+box-sizing: border-box;
+}
+.form-mar{
+    margin: 0.4rem .2rem;
+    /* margin-left: 1rem; */
+max-width: 16rem;
+}
+.form-in-text{
+     /* max-width: 12rem;  */
+padding: .2rem;
+outline: none;
+}
+
+.iconsz{
+    font-size: 3rem;
+    padding: .5rem;
+    margin: .2rem;
+}
+.text-col{
+text-decoration: none;
+color: rgb(169, 241, 249);
+text-decoration: underline;
+
+}
+
+.fot-down-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+.fot-down-flex-spb{
+    /* min-width: 40rem;  */
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-between;
+    color: whitesmoke;
+    padding: 1rem;
+    
+}
+.fot-width{
+      margin: .5rem;
+    padding: 1rem;
+max-width: 20rem;
+/* background-color: skyblue; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+    .flex-spaeven{
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .fot-down-flex-spb{
+        flex-wrap: wrap;
+       justify-content: center; 
+         }
+}
