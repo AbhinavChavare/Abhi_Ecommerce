@@ -32,7 +32,7 @@ const FilterSection = () => {
   return (
 
     //Search
-    <div className={`flex-column-center filcol`}  >
+    <div className={` filcol`}  >
       <form onSubmit={(e) => { e.preventDefault() }}>
         {/* <input type={text }
       name="text"
@@ -41,7 +41,6 @@ const FilterSection = () => {
        onChange={(event)=>updateFilterValue(event)}></input> */}
         <input type="text" name="text" value={text} placeholder='Search' onChange={(event) => updateFilterValue(event)}></input>
       </form>
-
 
       {/* Category  */}
 
@@ -54,6 +53,7 @@ const FilterSection = () => {
 
         }
       </div>
+      
       {/* Company */}
       <div>
         <p><strong>Company</strong></p>
@@ -74,11 +74,11 @@ const FilterSection = () => {
         <div className='coldflex'>
           {/* <button  className="ColbtnSize colbtnAll">All</button> */}
           {
-            ColoronlyData.map((curEle) => {
+            ColoronlyData.map((curEle,index) => {
               if (curEle == "All") {
-                return <button name="color" value={curEle} className="ColbtnSize colbtnAll" onClick={(event) => updateFilterValue(event)}>All</button>
+                return <button name="color" key={index} value={curEle} className="ColbtnSize colbtnAll" onClick={(event) => updateFilterValue(event)}>All</button>
               }
-              return <button name="color" value={curEle} className="ColbtnSize" style={{ backgroundColor: `${curEle}` }} onClick={(event) => updateFilterValue(event)}>
+              return <button name="color" value={curEle} className="ColbtnSize" key={index} style={{ backgroundColor: `${curEle}` }} onClick={(event) => updateFilterValue(event)}>
                 {color == curEle ? <TiTick className='ticksize' /> : null}
               </button>
             })

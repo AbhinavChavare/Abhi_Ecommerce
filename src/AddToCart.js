@@ -3,13 +3,16 @@ import "./AddToCart.css"
 import { TiTick } from "react-icons/ti";
 import AddCartToggle from './AddCartToggle';
 import { NavLink } from 'react-router-dom';
+import { useCartContext } from './Component/context/CartContext';
+
 
 const AddToCart = ({product}) => {
-    const {id,colors,stock}=product
-    console.log(product)
-
-const [color,setcolor]=useState(colors[0])
-
+  const {id,colors,stock}=product
+  
+  const {AddToCartMain}=useCartContext()
+  
+  const [color,setcolor]=useState([colors[0]])
+  
 
 const [amount,setamount]=useState(1)
 
@@ -38,7 +41,7 @@ const Increment=()=>{
   <AddCartToggle 
   amount={amount} Increment={Increment} Decrement={Decrement} />
 
-<NavLink to="/cart"  onClick={()=>AddToCartMain({...product})}>
+<NavLink to="/cart"  onClick={()=>AddToCartMain({id,color,amount,product})}>
   <button className='btnshow'>Add To Cart</button>
   </NavLink>
     </div>

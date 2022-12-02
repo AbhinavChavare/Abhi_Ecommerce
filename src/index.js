@@ -5,19 +5,22 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AppProvider } from './Component/context/ProductContext';
 import { FilterProvider } from './Component/context/FilterContext';
+import { CartContextProvider } from './Component/context/CartContext';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-<AppProvider>
+    <AppProvider>
 
-<FilterProvider>
-{/* <StrictMode> */}
-    <App />
-    {/* </StrictMode> */}
-    </FilterProvider>
-    
+        <FilterProvider>
+            <CartContextProvider>
+                {/* <StrictMode> */}
+                <App />
+                {/* </StrictMode> */}
+            </CartContextProvider>
+        </FilterProvider>
+
     </AppProvider>
 );
 

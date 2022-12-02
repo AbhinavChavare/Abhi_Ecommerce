@@ -1,17 +1,17 @@
 .cart-toggle-flex{
-    height: 4.5rem;
-    width: 12rem;
+    height: 3rem;
+    width: 6rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 .cart-size{
-    font-size: 3rem;
+    font-size: 2.3rem;
     display: flex;
     align-items: center;
-    margin: .1rem .5rem;
+    margin: .1rem .1rem;
     justify-content: center;
-      padding: .3rem;
+      padding: .2rem;
     box-sizing: border-box;
 }
 .cart-col{

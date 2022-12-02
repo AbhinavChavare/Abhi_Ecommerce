@@ -15,6 +15,7 @@ const SingelProduct = () => {
   const { id } = useParams()
   const { getSingleProduct, singleProduct } = useProContext();
   const { id: jk, name, image = [{ url: " " }], company, price, description, stock, reviews, stars } = singleProduct
+ 
 
   const [mainImg, setmainImg] = useState(image[0])
 

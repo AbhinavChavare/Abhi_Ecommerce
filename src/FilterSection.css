@@ -1,6 +1,11 @@
 .filcol{
     padding:2rem 0;
      box-sizing:border-box;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content:center;
+     align-items: flex-start;
      width:100%,
    }
    .coldflex{

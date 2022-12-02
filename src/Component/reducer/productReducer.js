@@ -37,7 +37,8 @@ case "SET_SINGLE_ERROR":
         isSingleLoading:false,
         isError:true
     }
-    case "SET_SINGLE_PRODUCT":            return{
+    case "SET_SINGLE_PRODUCT":     
+           return{
         ...state,
         isSingleLoading:false,
         singleProduct:action.payload

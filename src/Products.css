@@ -49,7 +49,7 @@ align-items: center;
 }
 
 
-@media (max-width:800px){
+@media (max-width:900px){
     .filter-view{
       min-width: 16rem;
         width:75%;

@@ -4,11 +4,13 @@ import "./Header.css"
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
+import { useCartContext } from '../context/CartContext';
 
 const Nav = () => {
 
     const [act, setact] = useState(true)
     const [navhs, setnavhs] = useState("")
+    const{total_item}=useCartContext()
 
     const getnav = () => {
         setact(false)
@@ -23,14 +25,14 @@ const Nav = () => {
         <div className={`navcon`}>
 
             <div className={`navcon-li ${navhs}`} >
-                <li><NavLink  onClick={() => { hidenav() }}  className={"hov"} to="/" >Home</NavLink></li>
+                <li><NavLink onClick={() => { hidenav() }} className={"hov"} to="/" >Home</NavLink></li>
 
-                <li><NavLink onClick={() => { hidenav() }}  className={"hov"} to="/about"  > About</NavLink></li>
-                <li><NavLink onClick={() => { hidenav() }}  className={"hov"}to="/products" >Products</NavLink></li>
+                <li><NavLink onClick={() => { hidenav() }} className={"hov"} to="/about"  > About</NavLink></li>
+                <li><NavLink onClick={() => { hidenav() }} className={"hov"} to="/products" >Products</NavLink></li>
 
                 <li><NavLink onClick={() => { hidenav() }} className={"hov"} to="/contact" >Contact</NavLink></li>
 
-                <li><NavLink onClick={() => { hidenav() }}  className="cartsize hov " to="/cart"><AiOutlineShoppingCart /></NavLink></li>
+                <li><NavLink onClick={() => { hidenav() }} className="cartsize hov cart-abs " to="/cart"><AiOutlineShoppingCart /><span className='cart-total'>{total_item}</span></NavLink> </li>
             </div>
 
             <div className='mobile-navbar-btn'>
