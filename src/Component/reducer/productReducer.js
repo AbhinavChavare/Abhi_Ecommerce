@@ -8,7 +8,6 @@ return{
 }
 
 case "SET_API_DATA":
-
     const featureData=action.payload.filter((curElem)=>{return(curElem.featured===true) })
     
     // console.log(action.payload)

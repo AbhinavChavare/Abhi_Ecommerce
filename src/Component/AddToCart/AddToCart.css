@@ -1,0 +1,35 @@
+.colcen {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.title-col {
+  color: gray;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  padding: .5rem;
+  margin: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ic-col {
+  font-size: 3rem;
+}
+
+.btnshow {
+  padding: 1.5rem 2rem;
+  color: whitesmoke;
+  background-color: rgb(40, 172, 224);
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.btnshow:hover {
+  background-color: aqua;
+  color: blue;
+}

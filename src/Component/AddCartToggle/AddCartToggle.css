@@ -1,0 +1,21 @@
+.cart-toggle-flex {
+    height: 3rem;
+    width: 6rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cart-size {
+    font-size: 2.3rem;
+    display: flex;
+    align-items: center;
+    margin: .1rem .1rem;
+    justify-content: center;
+    padding: .2rem;
+    box-sizing: border-box;
+}
+
+.cart-col {
+    background-color: lightgray;
+}

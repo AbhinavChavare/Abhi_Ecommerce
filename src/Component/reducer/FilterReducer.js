@@ -17,13 +17,6 @@ const FilterReducer = (state, action) => {
         return elem.price
         })
       let   maxprice= Math.max(...pricesrry)
-        // console.log(maxprice)
-
-    //  let maxprice=pricesrry.reduce((initialval,curval)=>{
-    //   return ( Math.max(initialval,curval),0)
-
-    //   })
-    //   console.log(maxprice)
   
           return {
         ...state,

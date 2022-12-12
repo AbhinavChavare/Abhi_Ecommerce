@@ -45,7 +45,7 @@ try{
 const res= await axios (url)
 const singleProducts=await res.data;
  dispatch({type:"SET_SINGLE_PRODUCT",payload:singleProducts})
-//  console.log(singleProducts)
+ console.log(singleProducts)
 }catch(error){
 dispatch({type:"SET_SINGLE_ERROR"})
 }

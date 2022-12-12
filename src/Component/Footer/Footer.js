@@ -25,9 +25,10 @@ const Footer = () => {
                         </div>
                         <div className='fot-data-con '>
                             <h3>Subscribe to get important Updates</h3>
-                            <form >
+                            <form onSubmit={(e)=>{e.preventDefault()}} >
                                 <input className='form-mar form-in-text' type="text" placeholder='Enter your email'>
                                 </input>
+
                                 <button className='btnshow form-mar'>Get Started</button>
                             </form>
                         </div>

@@ -49,7 +49,7 @@
     z-index: 99;
     display: none;
     position: absolute;
-    top: 2.5rem;
+    top: 1.5rem;
     right: 3rem;
     font-size: 2.5rem;
     padding: .5rem;
@@ -72,6 +72,25 @@ background-color: transparent;
   right: 0;
 
 }
+.auth-loglbtn{
+    width:10rem;
+    font-size: 1.7rem;
+    height: 2.8rem;
+    margin: 0;
+    font-weight: 450;
+    padding: 0;
+   
+    color: whitesmoke;
+    background-color: rgb(37, 155, 202);
+   padding: .3rem;
+    border-radius: 5px;
+
+}
+.auth-loglbtn:hover{
+    background-color: aqua;
+    color: blue;
+}
+
 
 
 
