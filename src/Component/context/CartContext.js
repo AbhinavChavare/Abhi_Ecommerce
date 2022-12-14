@@ -44,6 +44,7 @@ const CartContextProvider = ({ children }) => {
         return dispatch({ type: "SET_REMOVE_ITEM", payload: id })
     }
 
+
     const ClearCart = () => {
         return dispatch({ type: "SET_CLEAR_CART" })
     }

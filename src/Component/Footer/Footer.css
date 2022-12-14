@@ -4,7 +4,7 @@
     position: relative;
     margin-top: 7rem;
 }
-.footstart{
+.footcon .footstart{
     min-width: 60vw;
     max-width: 70vw;
     /* height:10rem; */
@@ -20,7 +20,7 @@
     
          
 }
-.flex-spaeven{
+.footcon .flex-spaeven{
     justify-content: space-between;
     
 }
@@ -53,7 +53,7 @@
     padding-top: 10rem ;
     box-sizing: border-box;
 }
-.fot-data-con{
+.fot-sect-cent .fot-data-con{
 width:18rem;
 min-height: 10rem;
 color: whitesmoke;
@@ -66,23 +66,23 @@ border-radius: 1rem;
 margin: .5rem;
 box-sizing: border-box;
 }
-.form-mar{
+input  .form-mar{
     margin: 0.4rem .2rem;
     /* margin-left: 1rem; */
 max-width: 16rem;
 }
-.form-in-text{
+input .form-in-text{
      /* max-width: 12rem;  */
 padding: .2rem;
 outline: none;
 }
 
-.iconsz{
-    font-size: 2.2rem;
+span a .iconsz{
+    font-size: 3rem;
     padding: .5rem;
     margin: .2rem;
 }
-.text-col{
+.fot-data-con h3 a .text-col{
 text-decoration: none;
 color: rgb(169, 241, 249);
 text-decoration: underline;
@@ -94,7 +94,7 @@ text-decoration: underline;
     align-items: center;
     justify-content: center;
    }
-.fot-down-flex-spb{
+   .fot-down-flex .fot-down-flex-spb{
     /* min-width: 40rem;  */
     width: 70vw;
     display: flex;
@@ -105,7 +105,7 @@ text-decoration: underline;
     padding: 1rem;
     
 }
-.fot-width{
+.fot-down-flex .fot-down-flex-spb .fot-width{
       margin: .5rem;
     padding: 1rem;
 max-width: 20rem;

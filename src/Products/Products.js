@@ -3,7 +3,9 @@ import "./Products.css"
 import ProductList from '../Component/ProductList/ProductList'
 import Sort from '../Component/Sort/Sort'
 import FilterSection from '../Component/FilterSection/FilterSection'
+
 const Products = () => {
+
   return (
     <div className='container'>
       <div className='prod-view-flex'>

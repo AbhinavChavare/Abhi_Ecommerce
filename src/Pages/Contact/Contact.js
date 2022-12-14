@@ -1,9 +1,8 @@
 import React from 'react'
 import "./Contact.css"
-import { useAuth0 } from "@auth0/auth0-react";
 
 const Contact = () => {
-  const { user, isAuthenticated } = useAuth0();
+
   return (
     <div>
       <div className='container'>
@@ -16,15 +15,17 @@ const Contact = () => {
         <div className=' cont-form '>
           <form className='conformwid  flex-column-center' action='https://formspree.io/f/meqdwlpe' method="POST">
             <input className='conformwid'
-              value={isAuthenticated ? user.name : null}
+             
               type={"text"} name="UserName" placeholder="Usernamer" required autoComplete='off'></input>
 
             <input className='conformwid'
-              value={isAuthenticated ? user.email : null}
-              type={"email"} name="Email" placeholder="Email" required autoComplete='off'></input>
+                type={"email"} name="Email" placeholder="Email" required autoComplete='off'></input>
 
-            <textarea className='conformwid' name="Message" cols="30" rows="8" autoComplete='off' required placeholder='Enter your Message'> </textarea>
-            {/* <button type='submit'></button> */}
+            <textarea className='conformwid' name="Message"
+             cols="30" rows="8" autoComplete='off' 
+             required placeholder='enter your message'
+             > </textarea>
+    
             <input className='conformwid formbtn' type={"submit"} value="Submit"></input>
 
 

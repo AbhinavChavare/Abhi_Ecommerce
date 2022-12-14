@@ -71,6 +71,7 @@ const CartReducer = (state, action) => {
         }
     }
 
+    //increment cart product
     if (action.type === "SET_INCREMENT") {
         let updateData = state.cart.map((curele) => {
             if (curele.id === action.payload) {
@@ -94,6 +95,8 @@ const CartReducer = (state, action) => {
             cart: updateData
         }
     }
+
+    //decrement cart products
     if (action.type === "SET_DECREMENT") {
         let updateData = state.cart.map((curele) => {
             if (curele.id === action.payload) {
@@ -120,9 +123,9 @@ const CartReducer = (state, action) => {
 
 
 
-
+//total cart
     if (action.type === "SET_CART_TOTAL") {
-   
+       console.log(state.cart)
         let updateCartItem = state.cart.reduce((acc, curele) => {
             return acc = acc + curele.amount
         }, 0)
@@ -134,6 +137,7 @@ const CartReducer = (state, action) => {
             ...state,
             total_item: updateCartItem,
             total_price: updateTotalPrice,
+            shipping: 50000,
         }
 
 

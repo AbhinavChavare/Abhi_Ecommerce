@@ -7,7 +7,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 const Cart = () => {
   const { cart, ClearCart, total_price, shipping } = useCartContext();
-  const { user, isAuthenticated } = useAuth0();
+
 
   if (cart.length < 1) {
     return (
@@ -24,9 +24,7 @@ const Cart = () => {
     return (
       <div className='container'>
 
-        {
-          isAuthenticated ? <h2>{user.name}</h2> : ""
-        }             <div className='cart-cont'>
+            <div className='cart-cont'>
           <h3 className='cart-wid-item'>Item</h3>
           <h3 className='cart-wid-it-rem hide'>Price</h3>
           <h3 className='cart-wid-it-rem'>Quantity</h3>

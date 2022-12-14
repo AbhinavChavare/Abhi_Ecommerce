@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom'
 const Product = (ele) => {
   return (
     <div>
+
+
       <div className='ser-data-con'>
         <NavLink to={`/SingleProduct/${ele.id}`}>
           <div className='feaimage'>
